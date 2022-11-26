@@ -2,15 +2,15 @@
 #include <stdlib.h>
 int* bubblesort(int* array, int arrSize)//use bubblesort to sort the array
 {
-    for(size_t i = 1;i < arrSize;i++)
+    for(size_t size = 1;size < arrSize;size++)
     {
-        for(size_t j = 0;j < arrSize-i;j++)
+        for(size_t loop = 0;loop < arrSize-size;loop++)
         {
-            if(array[j]>array[j+1])//swap the value if left value is bigger then the right
+            if(array[loop]>array[loop+1])//swap the value if left value is bigger then the right
             {
-                int temp = array[j];
-                array[j]=array[j+1];
-                array[j+1]=temp;
+                int temp = array[loop];
+                array[loop]=array[loop+1];
+                array[loop+1]=temp;
             }
         }
     }
