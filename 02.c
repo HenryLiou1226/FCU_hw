@@ -4,7 +4,8 @@ int compare(const void*a,const void*b)//using function qsort need to define a fu
 {
     return (*(int*)a - *(int*)b);
 }
-int* quickSort(int* array, int arrSize){
+int* quickSort(int* array, int arrSize)
+{
     qsort(array,arrSize,sizeof(int),compare);//using function qsort from <stdlib.h> to sort the array
     return array;//The array is sorted, return to the main function
 }

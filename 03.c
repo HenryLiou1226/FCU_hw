@@ -2,20 +2,19 @@
 #include <stdlib.h>
 
 int temp;
-int* selectionSort(int* nums, int numsSize){
-    for (int step = 0;step < numsSize; step++)
+int* selectionSort(int* array, int arrSize){
+    for (int step = 0;step < arrSize; step++)
 	{
-		// Find the minimum element in unsorted array
-		for (int min_index = step+1; min_index < numsSize; min_index++){
-			if (nums[min_index] < nums[step]){
-				temp = nums[min_index];
-				nums[min_index] = nums[step];
-				nums[step] = temp;
+		for (int min_index = step+1; min_index < arrSize; min_index++)
+		{
+			if (array[min_index] < array[step]){// Find the minimum element in unsorted array and swap the found minimum element with the first element
+				temp = array[min_index];
+				array[min_index] = array[step];
+				array[step] = temp;
 			}
 		}
-		// Swap the found minimum element with the first element
 	}
-    return nums;
+    return array;//The array is sorted, return to the main function
 }
 int main(void)
 {
