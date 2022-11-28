@@ -19,7 +19,7 @@ int* bubblesort(int* array, int arrSize)//use bubblesort to sort the array
 int main(void)
 {
     int arr[] = { 12, 11, 13, 5, 6 };
-    int* sortedArray = bubblesort(arr,sizeof(arr)/sizeof(int));//use another Array to get the return sorted array from function quickSort
+    int* sortedArray = bubblesort(arr,sizeof(arr)/sizeof(int));//use another Array to get the return sorted array from function bubblesort
     for(size_t i = 0;i < sizeof(arr)/sizeof(int);i++)
     {
         printf("%d ",sortedArray[i]);//print out the Array that has been sorted

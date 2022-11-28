@@ -18,7 +18,7 @@ int* insertionSort(int* array, int arrSize){
 int main(void)
 {
     int arr[] = { 12, 11, 13, 5, 6 };
-    int* sortedArray = insertionSort(arr,sizeof(arr)/sizeof(int));
+    int* sortedArray = insertionSort(arr,sizeof(arr)/sizeof(int));//use another Array to get the return sorted array from function insertionSort
     for(size_t i = 0;i < sizeof(arr)/sizeof(int);i++)
     {
         printf("%d ",sortedArray[i]);//print out the Array that has been sorted

@@ -40,7 +40,7 @@ int main(void)
     srand((unsigned) time(&t));
     int array[] = { 12, 11, 13, 5, 6 };
     int len = sizeof(array)/sizeof(array[0]);//count the length of the array
-    int* sortedArray = bogosort(array, len);
+    int* sortedArray = bogosort(array, len);//use another Array to get the return sorted array from function bogosort
     for(size_t i = 0;i < sizeof(array)/sizeof(int);i++)
     {
         printf("%d ",sortedArray[i]);//print out the Array that has been sorted
