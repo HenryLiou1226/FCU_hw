@@ -1,12 +1,12 @@
 long long a[46];
 int t = 0;
 int climbStairs(int n){
-    if(n==0)
-        return 0;
-    else if(n==1)
-        return 1;
-    else
-        return climbStairs(n-1)+climbStairs(n-2);
+    if(t==0)
+    {
+        dd();
+        t+=1;
+    }
+    return a[n];
 }
 void dd()
 {
