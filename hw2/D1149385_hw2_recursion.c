@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-int climbStairs(int n)
+int climbStairs(int steps)//recursion
 {
-    if(n==0)
+    if(steps==0)
         return 1;
-    else if(n==1)
+    else if(steps==1)
         return 1;
     else
-        return climbStairs(n-1)+climbStairs(n-2);
+        return climbStairs(steps-1)+climbStairs(steps-2);//return the answer value
 }
 int main(void)
 {
