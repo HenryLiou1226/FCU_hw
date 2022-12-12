@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 int climbStairs(int n)
 {
     int a = 1;
@@ -23,5 +26,13 @@ int climbStairs(int n)
     else
     {
         return b;
+    }
+}
+int main(void)
+{
+    int steps;
+    while(scanf("%d",&steps) != EOF)
+    {
+        printf("%d\n",climbStairs(steps));
     }
 }
