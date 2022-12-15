@@ -21,7 +21,7 @@ input.addEventListener("keypress", function(event) {
 button.addEventListener('click', () => {
     const result = document.getElementById('output');
     var music = new Audio('audio3.mp3');
-    
+    music.play();
     result.innerHTML = '<br>今晚 我想來點:'+arr[getRandom(0,58)];
     button.style.display = 'none';
     button2.style.display = 'block';
