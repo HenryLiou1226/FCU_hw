@@ -6,7 +6,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 import base64
 import requests
 while(1):
-    sleep(3600)
     username = ""
     password = ""
     url = "https://signin.fcu.edu.tw/clockin/login.aspx"
@@ -34,5 +33,6 @@ while(1):
     if(t.is_enabled()):
         driver.find_element("id","Button0").click()
     else:
+        sleep(3600)
         continue
         
