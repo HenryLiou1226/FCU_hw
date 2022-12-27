@@ -11,10 +11,8 @@ while(1):
     url = "網址"
     driver = webdriver.Chrome("chromedriver")
     driver.get(url)
-    driver.find_element("id","LoginLdap_UserName").send_keys(username)
-    driver.find_element("id","LoginLdap_Password").send_keys(password)
-    driver.find_element("id","LoginLdap_LoginButton").click()
-    driver.find_element("id","ButtonClassClockin").click()
+    driver.find_element("id","??").send_keys(username)
+    driver.find_element("id","??").send_keys(password)
     img_base64 = driver.execute_script("""
         var ele = arguments[0];
         var cnv = document.createElement('canvas');
@@ -28,7 +26,4 @@ while(1):
     with open('captcha.png', 'rb') as f:
         img_bytes = f.read()
     res = ocr.classification(img_bytes)
-    t = driver.find_element("id","Button0")
-    driver.find_element("id","validateCode").send_keys(res)
-    if(t.is_enabled()):
-        driver.find_element("id","Button0").click()
+    driver.find_element("id","??").send_keys(res)
