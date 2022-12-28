@@ -4,7 +4,6 @@ import requests
 import ddddocr
 from webdriver_manager.chrome import ChromeDriverManager
 import base64
-import requests
 while(1):
     username = "帳號"
     password = "密碼"
